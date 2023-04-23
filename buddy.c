@@ -163,6 +163,7 @@ int free_all_pages() {
             all[i] = NULL;
         }
     }
+    free(all);
     for (int r = 1; r <= max_rank; ++r) {
         BPage* u = list[r];
         while (u != NULL) {
