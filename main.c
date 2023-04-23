@@ -74,7 +74,6 @@ int main() {
         tCnt = 0;
         q = p;
         ret = query_ranks(q);
-        printf("%d\n", ret);
         ok(ret == MAXRANK);
     }
     {
